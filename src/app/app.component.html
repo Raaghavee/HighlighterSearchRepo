@@ -1,0 +1,11 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<div class="col-12">
+  <input type="text" name="search" [(ngModel)]="search"/>
+</div>
+<ul>
+  <li *ngFor="let val of testArr" [innerHtml]="val | highlight : search">
+  </li>
+</ul>
